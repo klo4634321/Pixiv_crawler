@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixiv 下載器</title>
+</head>
+<body>
+    <h1>Pixiv 下載器</h1>
+    <form action="/download" method="POST">
+        <label for="username">Pixiv 用戶名:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Pixiv 密碼:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="artist_id">畫師 ID:</label>
+        <input type="text" id="artist_id" name="artist_id" required><br><br>
+
+        <label for="max_artworks">最大下載作品數量 (預設 5):</label>
+        <input type="number" id="max_artworks" name="max_artworks" value="5"><br><br>
+
+        <input type="submit" value="開始下載">
+    </form>
+</body>
+</html>
